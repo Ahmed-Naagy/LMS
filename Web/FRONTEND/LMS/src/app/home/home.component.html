@@ -1,0 +1,10 @@
+﻿
+<app-student-header *ngIf="isStudent"></app-student-header>
+<app-teacher-header *ngIf="isTeacher"></app-teacher-header>
+
+<div class="p-4">
+    <div class="container">
+        <h1 >Hi {{this.accountInfo.fname }} {{this.accountInfo.mname}}!</h1>
+        <h1>this page can access from unauthorized users "Public Page"</h1>
+    </div>
+</div>

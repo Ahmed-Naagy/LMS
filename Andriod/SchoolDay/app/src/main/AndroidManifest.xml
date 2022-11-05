@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.schoolday">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+
+        android:icon="@drawable/lms"
+        android:label="School Day"
+        android:roundIcon="@drawable/lms"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".student.feedpackage.AddFeedActivity"></activity>
+        <activity android:name=".MainActivityTeacher" />
+        <activity android:name=".parent.ParentBusActivity" />
+        <activity android:name=".parent.ParentAssignmentActivity" />
+        <activity android:name=".parent.ParentAttendanceActivity" />
+        <activity android:name=".parent.ParentExamActivity" />
+        <activity android:name=".parent.feespackage.ParentFeesActivity" />
+        <activity android:name=".parent.ParentProfileActivity" />
+        <activity android:name=".parent.ParentStudentProfileActivity" />
+        <activity android:name=".parent.ParentHomeActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".student.MainActivity" />
+        <activity android:name=".signup.Signup2Activity" />
+        <activity android:name=".student.notepackage.NotesEditActivity" />
+        <activity android:name=".signup.SignupActivity" />
+        <activity android:name=".student.OnlineFriendsActivity" />
+        <activity android:name=".student.FragmentAssignment$EditActivity" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
